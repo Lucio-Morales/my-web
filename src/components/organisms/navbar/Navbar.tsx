@@ -33,8 +33,8 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
 
-          <div className="flex items-center gap-4">
-            <div className="hidden md:block">
+          <div className="flex items-center gap-4 ">
+            <div className="hidden md:block rounded-full shadow-[0_12px_22px_rgba(0,0,0,0.2)] dark:shadow-[0_12px_22px_rgba(0,0,0,0.9)] p-1">
               <DarkModeToggler />
             </div>
 
@@ -62,9 +62,19 @@ const Navbar: React.FC = () => {
         </AnimatePresence>
       </header>
 
-      <div className="fixed bottom-4 right-4 z-50 md:hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
+        className="
+    fixed bottom-4 right-4 z-50 md:hidden 
+    backdrop-blur-sm
+    shadow-[0_12px_22px_rgba(0,0,0,0.4)] dark:shadow-[0_12px_22px_rgba(0,0,0,0.9)]
+    rounded-full p-1
+  "
+      >
         <DarkModeToggler />
-      </div>
+      </motion.div>
     </>
   );
 };
