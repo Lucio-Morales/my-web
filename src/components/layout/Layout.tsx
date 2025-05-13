@@ -6,7 +6,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-800">
+    <div className="flex flex-col min-h-screen bg-[#FAF7F1] dark:bg-[#121317]">
       <Navbar />
       <main className="flex-1 px-4 sm:px-6 lg:px-8">{children}</main>
       <footer>Footer</footer>

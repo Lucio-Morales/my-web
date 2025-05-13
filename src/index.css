@@ -1,13 +1,10 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *)); 
 
-.font-heading {
-  font-family: 'Dancing Script', sans-serif;
-}
 
 .font-body {
   font-family: 'Castoro', sans-serif;
-} 
+}
 
 .fade-bottom-mask {
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
