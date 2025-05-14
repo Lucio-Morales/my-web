@@ -9,7 +9,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, label, onClick }) => {
     <a
       href={href}
       onClick={onClick}
-      className="text-gray-800 dark:text-white hover:text-primary transition-colors text-xl sm:text-base"
+      className="text-gray-800 dark:text-white hover:text-primary transition-colors text-xl sm:text-xl"
     >
       {label}
     </a>

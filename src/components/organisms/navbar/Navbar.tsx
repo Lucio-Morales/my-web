@@ -6,7 +6,6 @@ import HamburgerButton from '../../atoms/HamburgerButton';
 import DarkModeToggler from '../../DarkModeToggler';
 
 const links = [
-  { href: '#inicio', label: 'Inicio' },
   { href: '#proyectos', label: 'Proyectos' },
   { href: '#sobremi', label: 'Sobre mí' },
   { href: '#contacto', label: 'Contacto' },
@@ -17,7 +16,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <header className="w-full px-4 sm:px-6 lg:px-8 py-4  bg-[#FAF7F1] dark:bg-[#121317] fixed top-0 left-0 z-50">
+      <header className="font-body w-full px-4 sm:px-6 lg:px-8 pt-4 pb-0  bg-[#FAF7F1] dark:bg-[#121317] fixed top-0 left-0 z-50">
         <nav
           role="navigation"
           aria-label="Menú principal"
@@ -52,7 +51,7 @@ const Navbar: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2, ease: 'easeInOut' }}
-              className="absolute top-full right-2 mt-2 w-48 bg-[#F0E7DA] dark:bg-[#1c1f25] shadow-lg rounded-lg p-4 flex flex-col gap-2 z-40"
+              className="absolute top-full right-2 mt-0 w-42 bg-zinc-200 dark:bg-[#1c1f25] shadow-lg rounded-lg p-4 flex flex-col gap-6 z-40"
             >
               {links.map((link) => (
                 <NavLink key={link.href} href={link.href} label={link.label} onClick={() => setMenuOpen(false)} />

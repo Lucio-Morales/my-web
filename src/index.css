@@ -6,6 +6,10 @@
   font-family: 'Castoro', sans-serif;
 }
 
+.font-logo {
+  font-family: 'Herr Von Muellerhoff', sans-serif;
+}
+
 .fade-bottom-mask {
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);

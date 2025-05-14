@@ -1,7 +1,7 @@
 const Logo: React.FC = () => {
   return (
-    <a href="#inicio" className="flex flex-col items-center gap-1 group">
-      <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-100 group-hover:text-primary transition-colors">
+    <a href="#inicio" className="pt-2 flex flex-col items-center gap-1 group">
+      <span className="text-3xl font-logo italic text-zinc-900 dark:text-zinc-100 group-hover:text-primary transition-colors tracking-wide">
         Lucio Morales
       </span>
     </a>
