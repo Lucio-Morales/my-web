@@ -1,13 +1,11 @@
 import { ThemeProvider } from './context/ThemeContext';
-import Layout from './components/layout/Layout';
-import Hero from './components/Hero';
+import { RouterProvider } from 'react-router-dom';
+import router from './routes/router';
 
 function App() {
   return (
     <ThemeProvider>
-      <Layout>
-        <Hero />
-      </Layout>
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }

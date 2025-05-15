@@ -6,9 +6,9 @@ import HamburgerButton from '../../atoms/HamburgerButton';
 import DarkModeToggler from '../../DarkModeToggler';
 
 const links = [
-  { href: '#proyectos', label: 'Proyectos' },
-  { href: '#sobremi', label: 'Sobre mí' },
-  { href: '#contacto', label: 'Contacto' },
+  { href: '/', label: 'Inicio' },
+  { href: '/about', label: 'Sobre mí' },
+  { href: '/contact', label: 'Contacto' },
 ];
 
 const Navbar: React.FC = () => {
@@ -20,9 +20,8 @@ const Navbar: React.FC = () => {
         <nav
           role="navigation"
           aria-label="Menú principal"
-          className="flex items-center justify-between max-w-7xl mx-auto "
+          className="flex items-center justify-between max-w-6xl mx-auto "
         >
-          {/* LOGO */}
           <div className="flex-shrink-0">
             <Logo />
           </div>
