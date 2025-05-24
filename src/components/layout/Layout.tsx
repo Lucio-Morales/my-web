@@ -6,7 +6,9 @@ const Layout = () => {
     <div className="flex flex-col min-h-screen bg-[#FAF7F1] dark:bg-[#121317]">
       <Navbar />
       <main className="flex-1 px-4 sm:px-6 lg:px-8">
-        <Outlet />
+        <div className="max-w-5xl w-full mx-auto">
+          <Outlet />
+        </div>
       </main>
       <footer>Footer</footer>
     </div>
