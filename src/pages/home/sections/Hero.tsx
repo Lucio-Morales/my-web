@@ -3,14 +3,9 @@ import { Sparkles } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="font-body flex flex-col items-start justify-center min-h-screen pt-12 sm:pt-20 relative">
-      <div className="text-left sm:text-center space-y-4">
+      <div className="max-w-5xl w-full mx-auto text-left sm:text-center space-y-4">
         <h1 className="text-6xl sm:text-8xl font-extrabold sm:tracking-wide leading-tight text-zinc-800 dark:text-white flex flex-col sm:flex-row sm:items-center sm:justify-center">
           <span className="mr-2">Hola, </span>
-
-          {/* <span className="text-primary italic flex items-center sm:justify-center">
-            Soy <span>Lucio</span>
-            <Sparkles className="ml-4 text-zinc-400 dark:text-zinc-300" size={56} />
-          </span> */}
           <span className="text-primary italic flex items-center sm:justify-center">
             soy{' '}
             <span className="ml-2 font-bold underline relative inline-block bg-gradient-to-r from-zinc-400 via-zinc-500 to-zinc-600 bg-clip-text text-transparent animate-gradient-x">
@@ -52,7 +47,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Fondos decorativos */}
       <div className="absolute -z-10 right-4 top-20 w-32 h-32 bg-primary/20 blur-3xl rounded-full animate-pulse"></div>
     </section>
   );
