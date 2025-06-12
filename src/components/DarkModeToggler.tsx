@@ -12,7 +12,7 @@ const DarkModeToggler = () => {
       whileTap={{ scale: 0.95 }}
       className={`
         w-16 h-9 flex items-center rounded-full px-1 transition-colors duration-300
-        bg-zinc-300 dark:bg-zinc-700 shadow-inner
+        bg-zinc-300 dark:bg-zinc-700 shadow-inner 
       `}
     >
       <motion.div

@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
           </ul>
 
           <div className="flex items-center gap-4 ">
-            <div className="hidden md:block rounded-full shadow-[0_12px_22px_rgba(0,0,0,0.2)] dark:shadow-[0_12px_22px_rgba(0,0,0,0.9)] p-1">
+            <div className="hidden md:block rounded-full shadow-[0_12px_22px_rgba(0,0,0,0.2)] dark:shadow-[0_12px_22px_rgba(0,0,0,0.9)] p-1 mb-2">
               <DarkModeToggler />
             </div>
 
