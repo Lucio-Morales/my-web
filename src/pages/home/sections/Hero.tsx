@@ -7,22 +7,24 @@ const Hero = () => {
         <h1 className="text-6xl sm:text-8xl font-extrabold sm:tracking-wide leading-tight text-zinc-800 dark:text-white flex flex-col sm:flex-row sm:items-center sm:justify-center">
           <span className="mr-2">Hola, </span>
           <span className="text-primary italic flex items-center sm:justify-center">
-            soy{' '}
-            <span className="ml-2 font-bold underline relative inline-block bg-gradient-to-r from-zinc-400 via-zinc-500 to-zinc-600 bg-clip-text text-transparent animate-gradient-x">
-              Lucio
-              <span className="absolute inset-0 animate-ping opacity-10 rounded-full bg-zinc-400 dark:bg-zinc-600"></span>
-            </span>
+            soy <span className="ml-2 font-bold relative inline-block text-zinc-800 dark:text-white">Lucio</span>
             <Sparkles className="ml-4 text-zinc-400 dark:text-zinc-300" size={56} />
           </span>
         </h1>
 
-        <h2 className="text-4xl sm:text-6xl italic tracking-wide font-semibold text-zinc-500 dark:text-zinc-400">
-          Desarrollador <span className="text-primary italic">Fullstack</span>
+        {/* <h2 className="text-4xl sm:text-5xl italic tracking-wide font-semibold text-zinc-500 dark:text-zinc-400">
+          {'{ '} Desarrollador <span className="text-primary">Fullstack {' }'}</span>
+        </h2> */}
+        <h2 className="text-4xl sm:text-5xl italic tracking-wide font-semibold text-zinc-500 dark:text-zinc-400 relative inline-block">
+          <span className="relative inline-block bg-gradient-to-r from-zinc-400 via-zinc-500 to-zinc-600 bg-clip-text text-transparent animate-gradient-x">
+            Desarrollador Fullstack
+            <span className="absolute inset-0 rounded-full bg-zinc-400 dark:bg-zinc-600 opacity-10 animate-ping"></span>
+          </span>
         </h2>
 
-        <p className="text-lg sm:text-2xl text-zinc-700 dark:text-zinc-300 leading-relaxed">
-          Construyo experiencias significativas, elegantes y con propósito. Estoy comprometido con el desarrollo de
-          software eficiente, mantenible y escalable.
+        <p className="text-xl sm:text-3xl text-zinc-700 dark:text-zinc-300 leading-relaxed">
+          Las empresas necesitan adaptarse para superar los nuevos desafíos, yo desarrollo soluciones creativas,
+          impulsadas por un compromiso inquebrantable con la excelencia.
         </p>
 
         <div className="flex sm:justify-center gap-6">
